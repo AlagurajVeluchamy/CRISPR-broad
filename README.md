@@ -27,45 +27,47 @@ EpiCRISPR-targetfinder minimally only requires a genome file in fasta format, PA
 **Usage:**
 usage: epicrisprtarget.py [-h] 
 
-Module1:
+** Module1:**
+
 python epicrisprtarget.py genomesplit -h
-usage: epicrisprtarget.py genomesplit [-h] [-d GENOMESPLITFASTA]
 
-                                      [-p PAMSEQUENCE] [-o OUTPUTDIR]
-                                      
-                                      [-m MISMATCH] [-t THREADS]
-                                      
-                                      [-s GETSEQUENCES] [-n MINHITS]
-                                      
-                                      [-w WINDOW] [-l CANDIDATERNALENGTH]
+    usage: epicrisprtarget.py genomesplit [-d GENOMESPLITFASTA]
 
-optional arguments:
-  -h, --help            show this help message and exit
-  
-  -d GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
-                        Read bed/bam files from a directory.
-                        
-  -p PAMSEQUENCE, --pam_sequence PAMSEQUENCE
-                        Read bed/bam files from a directory.
-                        
-  -o OUTPUTDIR, --output_directory OUTPUTDIR
-                        Read bed/bam files from a directory.
-                        
-  -m MISMATCH, --num_mismatch MISMATCH
-                        Read bed/bam files from a directory.
-                        
-  -t THREADS, --num_threads THREADS
-                        Read bed/bam files from a directory.
-                        
-  -s GETSEQUENCES, --get_sequence GETSEQUENCES
-                        Read bed/bam files from a directory.
-                        
-  -n MINHITS, --get_minhits MINHITS
-                        Read bed/bam files from a directory.
-                        
-  -w WINDOW, --get_window WINDOW
-                        Read bed/bam files from a directory.
-                        
-  -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
-                        Read bed/bam files from a directory.
+                                        [-p PAMSEQUENCE] [-o OUTPUTDIR]
+                                      
+                                        [-m MISMATCH] [-t THREADS]
+                                      
+                                        [-s GETSEQUENCES] [-n MINHITS]
+                                      
+                                        [-w WINDOW] [-l CANDIDATERNALENGTH]
+
+  optional arguments:
+    -h, --help            show this help message and exit
+
+    -d GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
+                          Read bed/bam files from a directory.
+
+    -p PAMSEQUENCE, --pam_sequence PAMSEQUENCE
+                          Read bed/bam files from a directory.
+
+    -o OUTPUTDIR, --output_directory OUTPUTDIR
+                          Read bed/bam files from a directory.
+
+    -m MISMATCH, --num_mismatch MISMATCH
+                          Read bed/bam files from a directory.
+
+    -t THREADS, --num_threads THREADS
+                          Read bed/bam files from a directory.
+
+    -s GETSEQUENCES, --get_sequence GETSEQUENCES
+                          Read bed/bam files from a directory.
+
+    -n MINHITS, --get_minhits MINHITS
+                          Read bed/bam files from a directory.
+
+    -w WINDOW, --get_window WINDOW
+                          Read bed/bam files from a directory.
+
+    -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
+                          Read bed/bam files from a directory.
 
