@@ -3,8 +3,6 @@ from argumentparse import *
 from Bio import SeqIO
 import re
 
-
-
 def readgenomefastafile(argu):
     """ Read bed/bam files from a directory. """
     print argu.genomesplitfasta
@@ -36,34 +34,4 @@ def readgenomefastafile(argu):
             #print candidaterna
         #print(record.seq[start - 23:start+2])
     return file
-
-# def geteachchromlength():
-#     if ($seq_s){print FASTA "${id}_S\n$seq_s\n";}
-#     if ($seq_a){
-#     $seq_a=~tr / atucgACGUT / TAAGCTGCAA /;
-#     $seq_a=reverse($seq_a);
-#     print FASTA "${id}_A\n$seq_a\n";
-
-
-# def onefunctionconverttobigleters():
-#     if ($seq_s){print FASTA "${id}_S\n$seq_s\n";}
-#     if ($seq_a){
-#     $seq_a=~tr / atucgACGUT / TAAGCTGCAA /;
-#     $seq_a=reverse($seq_a);
-#     print FASTA "${id}_A\n$seq_a\n";
-
-# def onefunctiongetforwardandreverse():
-#     if ($seq_s){print FASTA "${id}_S\n$seq_s\n";}
-#     if ($seq_a){
-#     $seq_a=~tr / atucgACGUT / TAAGCTGCAA /;
-#     $seq_a=reverse($seq_a);
-#     print FASTA "${id}_A\n$seq_a\n";
-
-
-# def onefunctiongetallcandidatesequencewithGC():
-#     if ($seq_s){print FASTA "${id}_S\n$seq_s\n";}
-#     if ($seq_a){
-#     $seq_a=~tr / atucgACGUT / TAAGCTGCAA /;
-#     $seq_a=reverse($seq_a);
-#     print FASTA "${id}_A\n$seq_a\n";
 
