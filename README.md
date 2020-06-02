@@ -25,12 +25,18 @@ EpiCRISPR-targetfinder is a standalone tool that  enables user to scan genome fo
 EpiCRISPR-targetfinder minimally only requires a genome file in fasta format, PAM sequences in string format "NGG".
 
 **Usage:**
-usage: epicrisprtarget.py [-h] {genomesplit} ...
+usage: epicrisprtarget.py [-h] 
+
+Module1:
 python epicrisprtarget.py genomesplit -h
 usage: epicrisprtarget.py genomesplit [-h] [-d GENOMESPLITFASTA]
+
                                       [-p PAMSEQUENCE] [-o OUTPUTDIR]
+                                      
                                       [-m MISMATCH] [-t THREADS]
+                                      
                                       [-s GETSEQUENCES] [-n MINHITS]
+                                      
                                       [-w WINDOW] [-l CANDIDATERNALENGTH]
 
 optional arguments:
