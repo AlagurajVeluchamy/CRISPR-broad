@@ -5,9 +5,8 @@ Version: 1.1.0
 
 Date: 20-05-2020
 
-Author: Alaguraj Veluchamy alaguraj.v@gmail.com, Wolfgang Fischle
+Authors: Alaguraj Veluchamy alaguraj.v@gmail.com, Wolfgang Fischle
 
-Maintainer: Alaguraj Veluchamy alaguraj.v@gmail.com
 
 The package is developed for the design of gRNA for the targeted epigenome modifications on a broader region.
 
@@ -27,7 +26,7 @@ EpiCRISPR-targetfinder minimally only requires a genome file in fasta format, PA
 **Usage:**
 usage: epicrisprtarget.py [-h] 
 
-** Module1:**
+**Module 1:**
 
 python epicrisprtarget.py genomesplit -h
 
