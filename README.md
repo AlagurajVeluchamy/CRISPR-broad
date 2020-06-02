@@ -5,7 +5,7 @@ Version: 1.1.0
 
 Date: 20-05-2020
 
-Author: Alaguraj Veluchamy alaguraj.v@gmail.com
+Author: Alaguraj Veluchamy alaguraj.v@gmail.com, Wolfgang Fischle
 
 Maintainer: Alaguraj Veluchamy alaguraj.v@gmail.com
 
