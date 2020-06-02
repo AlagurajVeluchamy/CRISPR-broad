@@ -57,8 +57,4 @@ def overlapeachchromosome(argu):
                 fileoutmap.write(str(queryname) + "_" + str(querychr) + "_" + str(arbitraryid) + "_" + str(querystart) + "\t" + str(querysequence) + "\t" + str(gc_content) + "\t" + str(counthits) + "\t"+str(len(offtargetlist)) + "\t" + str(eachtuple[0])+":"+str(min(bestwindow)) + "-" + str(max(bestwindow)) + "\t" + str(newlist) + "\n")
         else:
             print "Pattern Match error"
-#     if ($seq_s){print FASTA "${id}_S\n$seq_s\n";}
-#     if ($seq_a){
-#     $seq_a=~tr / atucgACGUT / TAAGCTGCAA /;
-#     $seq_a=reverse($seq_a);
-#     print FASTA "${id}_A\n$seq_a\n";
+
