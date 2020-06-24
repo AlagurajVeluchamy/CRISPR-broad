@@ -80,6 +80,9 @@ python epicrisprtarget.py findwindow -h
                                           -w WINDOW
                                           -l CANDIDATERNALENGTH
 
+RESULTS:
+Results ranked list of gRNA and windows with score and dispersion are in tab-limited file: EpiCRISPR_results.xls
+
 Arguments list:
     
       -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
