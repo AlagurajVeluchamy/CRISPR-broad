@@ -26,21 +26,47 @@ EpiCRISPR-targetfinder minimally only requires a genome file in fasta format, PA
 **Usage:**
 usage: epicrisprtarget.py [-h] 
 
-**Module 1:**
+**Module 1: Split genome into candidate gRNA sequences**
 
 python epicrisprtarget.py genomesplit -h
 
-    usage: epicrisprtarget.py genomesplit [-d GENOMESPLITFASTA]
+usage: epicrisprtarget.py genomesplit [-d GENOMESPLITFASTA]
+                                      [-p PAMSEQUENCE] [-o OUTPUTDIR]                                      
+                                      [-m MISMATCH] [-t THREADS]                                      
+                                      [-s GETSEQUENCES] [-n MINHITS]                                   
+                                      [-w WINDOW] [-l CANDIDATERNALENGTH]
 
-                                        [-p PAMSEQUENCE] [-o OUTPUTDIR]
-                                      
-                                        [-m MISMATCH] [-t THREADS]
-                                      
-                                        [-s GETSEQUENCES] [-n MINHITS]
-                                      
-                                        [-w WINDOW] [-l CANDIDATERNALENGTH]
+**Module 2: Create index**
+usage: epicrisprtarget.py createindex [-h] -f GENOMESPLITFASTA
 
-  optional arguments:
+**Module 3: Map gRNA to genome**
+usage: epicrisprtarget.py maptogenome [-h] 
+                                       -f GENOMESPLITFASTA
+                                       -d WORKINGDIRECTORY 
+                                       -m MISMATCH 
+                                       -t THREADS
+                                       -s GETSEQUENCES 
+                                       -n MINHITS 
+                                       -g GC content in %
+                                       -l CANDIDATERNALENGTH
+                                       
+**Module 4:Filter hits for on-target and off-target**
+usage: epicrisprtarget.py filterhits [-h]
+                                      -d WORKINGDIRECTORY 
+                                      -t THREADS 
+                                      -n MINHITS
+
+**Module 5: Scoring windows and ranking gRNA**
+usage: epicrisprtarget.py findwindow [-h] 
+                                      -f GENOMESPLITFASTA 
+                                      -d WORKINGDIRECTORY 
+                                      -p PAMSEQUENCE 
+                                      -t THREADS 
+                                      -n MINHITS 
+                                      -w WINDOW 
+                                      -l CANDIDATERNALENGTH
+
+Arguments:
     -h, --help            show this help message and exit
 
     -d GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
