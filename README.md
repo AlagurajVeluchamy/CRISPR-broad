@@ -12,10 +12,10 @@ The package is developed for the design of gRNA for the targeted epigenome modif
 
 License: GPL-2
 
-Depends: bowtie-2, pandas
+Depends: bwa-0.7.17-r1188, python3, biopython, pandas, sort
 
 **Installation:**
-EpiCRISPR-TargetFinder depends on python3, bowtie. 
+EpiCRISPR-TargetFinder depends on python3, bwa. 
 
 **Description:**
 EpiCRISPR-targetfinder is a standalone tool that  enables user to scan genome for regions that has high frequency of gRNA with user-supplied variation. This open source tool is robust and efficient in finding gRNAs with scores and ranks potential target region. 
@@ -80,34 +80,23 @@ python epicrisprtarget.py findwindow -h
                                           -w WINDOW
                                           -l CANDIDATERNALENGTH
 
-Arguments:
+Arguments list:
     
-    -h, --help            show this help message and exit
-
-    -d GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
-                          Read bed/bam files from a directory.
-
-    -p PAMSEQUENCE, --pam_sequence PAMSEQUENCE
-                          Read bed/bam files from a directory.
-
-    -o OUTPUTDIR, --output_directory OUTPUTDIR
-                          Read bed/bam files from a directory.
-
-    -m MISMATCH, --num_mismatch MISMATCH
-                          Read bed/bam files from a directory.
-
-    -t THREADS, --num_threads THREADS
-                          Read bed/bam files from a directory.
-
-    -s GETSEQUENCES, --get_sequence GETSEQUENCES
-                          Read bed/bam files from a directory.
-
-    -n MINHITS, --get_minhits MINHITS
-                          Read bed/bam files from a directory.
-
-    -w WINDOW, --get_window WINDOW
-                          Read bed/bam files from a directory.
-
-    -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
-                          Read bed/bam files from a directory.
+      -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
+                            Genome sequence in FASTA format
+      -c CHR, --chromosome CHR
+                            chromosome name
+      -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
+                            Complete path of output directory
+      -p PAMSEQUENCE, --pam_sequence PAMSEQUENCE
+                            PAM sequence string eg: NGG
+      -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
+                            Candidate gRNA length
+      -g GC, --get_gc GC    gc content in integer
+      -t THREADS, --num_threads THREADS
+                            Launch t number of threads in parallel
+      -n MINHITS, --get_minhits MINHITS
+                            Minimum number of hits in a window (filter)
+      -w WINDOW, --get_window WINDOW
+                            Window size in bp
 
