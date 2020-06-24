@@ -30,47 +30,58 @@ usage: python epicrisprtarget.py [-h]
 
 python epicrisprtarget.py genomesplit -h
 
-    usage: epicrisprtarget.py genomesplit [-d GENOMESPLITFASTA]
-                                      [-p PAMSEQUENCE] [-o OUTPUTDIR]                                      
-                                      [-m MISMATCH] [-t THREADS]                                      
-                                      [-s GETSEQUENCES] [-n MINHITS]                                   
-                                      [-w WINDOW] [-l CANDIDATERNALENGTH]
+    usage: epicrisprtarget.py genomesplit -d GENOMESPLITFASTA
+                                          -p PAMSEQUENCE
+                                          -o OUTPUTDIR
+                                          -m MISMATCH
+                                          -t THREADS
+                                          -s GETSEQUENCES
+                                          -n MINHITS
+                                          -w WINDOW
+                                          -l CANDIDATERNALENGTH
 
 **Module 2: Create index**
+
 python epicrisprtarget.py createindex -h
 
     usage: python epicrisprtarget.py createindex [-h] -f GENOMESPLITFASTA
 
 **Module 3: Map gRNA to genome**
+
 python epicrisprtarget.py maptogenome -h
     
     usage: epicrisprtarget.py maptogenome [-h] 
                                            -f GENOMESPLITFASTA
-                                            -d WORKINGDIRECTORY 
-                                            -m MISMATCH 
-                                            -t THREADS
-                                            -s GETSEQUENCES 
-                                            -n MINHITS 
-                                            -g GC content in %
-                                            -l CANDIDATERNALENGTH
+                                           -d WORKINGDIRECTORY 
+                                           -m MISMATCH 
+                                           -t THREADS
+                                           -s GETSEQUENCES 
+                                           -n MINHITS 
+                                           -g GC content in %
+                                           -l CANDIDATERNALENGTH
                                        
 **Module 4:Filter hits for on-target and off-target**
-usage: epicrisprtarget.py filterhits [-h]
-                                      -d WORKINGDIRECTORY 
-                                      -t THREADS 
-                                      -n MINHITS
+python epicrisprtarget.py filterhits -h
+
+    usage: epicrisprtarget.py filterhits [-h]
+                                          -d WORKINGDIRECTORY
+                                          -t THREADS
+                                          -n MINHITS
 
 **Module 5: Scoring windows and ranking gRNA**
-usage: epicrisprtarget.py findwindow [-h] 
-                                      -f GENOMESPLITFASTA 
-                                      -d WORKINGDIRECTORY 
-                                      -p PAMSEQUENCE 
-                                      -t THREADS 
-                                      -n MINHITS 
-                                      -w WINDOW 
-                                      -l CANDIDATERNALENGTH
+python epicrisprtarget.py findwindow -h
+
+    usage: epicrisprtarget.py findwindow [-h] 
+                                          -f GENOMESPLITFASTA 
+                                          -d WORKINGDIRECTORY
+                                          -p PAMSEQUENCE 
+                                          -t THREADS
+                                          -n MINHITS 
+                                          -w WINDOW
+                                          -l CANDIDATERNALENGTH
 
 Arguments:
+    
     -h, --help            show this help message and exit
 
     -d GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
