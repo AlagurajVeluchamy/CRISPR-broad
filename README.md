@@ -23,32 +23,36 @@ EpiCRISPR-targetfinder is a standalone tool that  enables user to scan genome fo
 **Input:**
 EpiCRISPR-targetfinder minimally only requires a genome file in fasta format, PAM sequences in string format "NGG".
 
-**Usage:**
-usage: epicrisprtarget.py [-h] 
+**Usage: To list all modules**
+usage: python epicrisprtarget.py [-h] 
 
 **Module 1: Split genome into candidate gRNA sequences**
 
 python epicrisprtarget.py genomesplit -h
 
-usage: epicrisprtarget.py genomesplit [-d GENOMESPLITFASTA]
+    usage: epicrisprtarget.py genomesplit [-d GENOMESPLITFASTA]
                                       [-p PAMSEQUENCE] [-o OUTPUTDIR]                                      
                                       [-m MISMATCH] [-t THREADS]                                      
                                       [-s GETSEQUENCES] [-n MINHITS]                                   
                                       [-w WINDOW] [-l CANDIDATERNALENGTH]
 
 **Module 2: Create index**
-usage: epicrisprtarget.py createindex [-h] -f GENOMESPLITFASTA
+python epicrisprtarget.py createindex -h
+
+    usage: python epicrisprtarget.py createindex [-h] -f GENOMESPLITFASTA
 
 **Module 3: Map gRNA to genome**
-usage: epicrisprtarget.py maptogenome [-h] 
-                                       -f GENOMESPLITFASTA
-                                       -d WORKINGDIRECTORY 
-                                       -m MISMATCH 
-                                       -t THREADS
-                                       -s GETSEQUENCES 
-                                       -n MINHITS 
-                                       -g GC content in %
-                                       -l CANDIDATERNALENGTH
+python epicrisprtarget.py maptogenome -h
+    
+    usage: epicrisprtarget.py maptogenome [-h] 
+                                           -f GENOMESPLITFASTA
+                                            -d WORKINGDIRECTORY 
+                                            -m MISMATCH 
+                                            -t THREADS
+                                            -s GETSEQUENCES 
+                                            -n MINHITS 
+                                            -g GC content in %
+                                            -l CANDIDATERNALENGTH
                                        
 **Module 4:Filter hits for on-target and off-target**
 usage: epicrisprtarget.py filterhits [-h]
