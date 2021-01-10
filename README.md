@@ -23,7 +23,8 @@ pip install pandas
 
 
 **Installation:**
-EpiCRISPR-TargetFinder depends on python3, bwa. 
+EpiCRISPR-TargetFinder depends on python3, bwa.
+git clone https://github.com/AlagurajVeluchamy/EpiCRISPR-TargetFinder.git
 
 **Description:**
 EpiCRISPR-targetfinder is a standalone tool that  enables user to scan genome for regions that has high frequency of gRNA with user-supplied variation. This open source tool is robust and efficient in finding gRNAs with scores and ranks potential target region. 
