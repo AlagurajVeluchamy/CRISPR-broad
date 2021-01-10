@@ -13,6 +13,14 @@ The package is developed for the design of gRNA for the targeted epigenome modif
 License: GPL-2
 
 Depends: bwa-0.7.17-r1188, python3, biopython, pandas, sort
+Installing bwa:
+git clone https://github.com/lh3/bwa.git
+cd bwa; make
+
+Installing dependancies through pip:
+pip install biopython
+pip install pandas
+
 
 **Installation:**
 EpiCRISPR-TargetFinder depends on python3, bwa. 
