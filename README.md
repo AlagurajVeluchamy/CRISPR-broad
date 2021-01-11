@@ -108,6 +108,7 @@ python epicrisprtarget.py maptogenome -h
                                                                 Candidate gRNA length
                                        
 **Module 4:Filter hits for on-target and off-target**
+
 python epicrisprtarget.py filterhits -h
 
     usage: epicrisprtarget.py filterhits [-h]
@@ -120,6 +121,7 @@ python epicrisprtarget.py filterhits -h
                                                                 Minimum number of hits in a window (filter)
 
 **Module 5: Scoring windows and ranking gRNA**
+
 python epicrisprtarget.py findwindow -h
 
     usage: epicrisprtarget.py findwindow [-h] 
