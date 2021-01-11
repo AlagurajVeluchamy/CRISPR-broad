@@ -60,7 +60,8 @@ usage: python epicrisprtarget.py [-h]
 
 python epicrisprtarget.py genomesplit -h
 
-    usage: epicrisprtarget.py genomesplit -h, --help            show this help message and exit
+    usage: epicrisprtarget.py genomesplit [-h] 
+                                          -h, --help            show this help message and exit
                                           -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
                                                                 Genome sequence in FASTA format
                                           -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
@@ -77,7 +78,8 @@ python epicrisprtarget.py genomesplit -h
 
 python epicrisprtarget.py createindex -h
 
-    usage: python epicrisprtarget.py createindex -h, --help            show this help message and exit
+    usage: python epicrisprtarget.py createindex [-h] 
+                                                 -h, --help            show this help message and exit
                                                  -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
                                                                 Genome sequence in FASTA format
 
