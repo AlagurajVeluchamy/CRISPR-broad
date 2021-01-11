@@ -63,8 +63,6 @@ python epicrisprtarget.py genomesplit -h
     usage: epicrisprtarget.py genomesplit -h, --help            show this help message and exit
                                           -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
                                                                 Genome sequence in FASTA format
-                                          -c CHR, --chromosome CHR
-                                                                chromosome name
                                           -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
                                                                 Complete path of output directory
                                           -p PAMSEQUENCE, --pam_sequence PAMSEQUENCE
@@ -79,62 +77,64 @@ python epicrisprtarget.py genomesplit -h
 
 python epicrisprtarget.py createindex -h
 
-    usage: python epicrisprtarget.py createindex [-h] -f GENOMESPLITFASTA
+    usage: python epicrisprtarget.py createindex -h, --help            show this help message and exit
+                                                 -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
+                                                                Genome sequence in FASTA format
 
 **Module 3: Map gRNA to genome**
 
 python epicrisprtarget.py maptogenome -h
     
-    usage: epicrisprtarget.py maptogenome [-h] 
-                                           -f GENOMESPLITFASTA
-                                           -d WORKINGDIRECTORY 
-                                           -m MISMATCH 
-                                           -t THREADS
-                                           -s GETSEQUENCES 
-                                           -n MINHITS 
-                                           -g GC content in %
-                                           -l CANDIDATERNALENGTH
+    usage: epicrisprtarget.py maptogenome [-h]
+                                          -h, --help            show this help message and exit
+                                          -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
+                                                                Genome sequence in FASTA format
+                                          -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
+                                                                Complete path of output directory
+                                          -m MISMATCH, --num_mismatch MISMATCH
+                                                                Maximum number of mismatches for Bowtie2 alignment
+                                          -t THREADS, --num_threads THREADS
+                                                                Launch t number of threads in parallel
+                                          -n MINHITS, --get_minhits MINHITS
+                                                                Minimum number of hits in a window (filter)
+                                          -k MAXHITS, --get_maxmum_total_hits MAXHITS
+                                                                Maximum total number of hits
+                                          -g GC, --get_gc GC    gc content in integer
+                                          -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
+                                                                Candidate gRNA length
                                        
 **Module 4:Filter hits for on-target and off-target**
 python epicrisprtarget.py filterhits -h
 
     usage: epicrisprtarget.py filterhits [-h]
-                                          -d WORKINGDIRECTORY
-                                          -t THREADS
-                                          -n MINHITS
+                                          -h, --help            show this help message and exit
+                                          -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
+                                                                Complete path of output directory
+                                          -t THREADS, --num_threads THREADS
+                                                                Launch t number of threads in parallel
+                                          -n MINHITS, --get_minhits MINHITS
+                                                                Minimum number of hits in a window (filter)
 
 **Module 5: Scoring windows and ranking gRNA**
 python epicrisprtarget.py findwindow -h
 
     usage: epicrisprtarget.py findwindow [-h] 
-                                          -f GENOMESPLITFASTA 
-                                          -d WORKINGDIRECTORY
-                                          -p PAMSEQUENCE 
-                                          -t THREADS
-                                          -n MINHITS 
-                                          -w WINDOW
-                                          -l CANDIDATERNALENGTH
+                                          -h, --help            show this help message and exit
+                                          -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
+                                                                Genome sequence in FASTA format
+                                          -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
+                                                                Complete path of output directory
+                                          -p PAMSEQUENCE, --pam_sequence PAMSEQUENCE
+                                                                PAM sequence string eg: NGG
+                                          -t THREADS, --num_threads THREADS
+                                                                Launch t number of threads in parallel
+                                          -n MINHITS, --get_minhits MINHITS
+                                                                Minimum number of hits in a window (filter)
+                                          -w WINDOW, --get_window WINDOW
+                                                                Window size in bp
+                                          -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
+                                                                Candidate gRNA length
+
 
 **RESULTS:
 Results ranked list of gRNA and windows with score and dispersion are in tab-limited file: EpiCRISPR_results.xls**
-
-Arguments list:
-    
-      -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
-                            Genome sequence in FASTA format
-      -c CHR, --chromosome CHR
-                            chromosome name
-      -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
-                            Complete path of output directory
-      -p PAMSEQUENCE, --pam_sequence PAMSEQUENCE
-                            PAM sequence string eg: NGG
-      -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
-                            Candidate gRNA length
-      -g GC, --get_gc GC    gc content in integer
-      -t THREADS, --num_threads THREADS
-                            Launch t number of threads in parallel
-      -n MINHITS, --get_minhits MINHITS
-                            Minimum number of hits in a window (filter)
-      -w WINDOW, --get_window WINDOW
-                            Window size in bp
-
