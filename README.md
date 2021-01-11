@@ -12,12 +12,17 @@ The package is developed for the design of gRNA for the targeted epigenome modif
 
 License: GPL-2
 
-Depends: bwa-0.7.17-r1188, python3, biopython, pandas, sort
-Installing bwa:
+**Depends:**
+bwa-0.7.11, 
+Python 3.9.1, 
+biopython 1.78,
+pandas 1.2.0
+
+**Installing bwa:**
 git clone https://github.com/lh3/bwa.git
 cd bwa; make
 
-Installing dependancies through pip:
+**Installing dependancies through pip:**
 pip install biopython
 pip install pandas
 
@@ -34,10 +39,15 @@ EpiCRISPR-targetfinder minimally only requires a genome file in fasta format, PA
 
 **QUICK RUN**
 python epicrisprtarget.py genomesplit -d /Users/avelucha/Epicrisprtest/EpiCRISPR-TargetFinder -f Inputgenome.fa -g 50 -p GG -t 1 -l 23
+
 python epicrisprtarget.py createindex -f Inputgenome.fa
+
 python epicrisprtarget.py maptogenome -d /Users/avelucha/Epicrisprtest/EpiCRISPR-TargetFinder -f Inputgenome.fa -m 1 -n 3 -k 1 -g 50 -l 23 -t 1
+
 python epicrisprtarget.py filterhits -d /Users/avelucha/Epicrisprtest/EpiCRISPR-TargetFinder -n 3 -t 1
+
 python epicrisprtarget.py findwindow -d /Users/avelucha/Epicrisprtest/EpiCRISPR-TargetFinder -f Inputgenome.fa -p GG -t 1 -l 23 -w 1000 -n 3
+
 
 
 **Usage: To list all modules**
