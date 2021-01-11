@@ -56,15 +56,7 @@ python epicrisprtarget.py findwindow -d /Users/EpiCRISPR -f Inputgenome.fa -p GG
 
 usage: python epicrisprtarget.py [-h] 
 
-genomesplit,
-
-createindex,
-
-maptogenome,
-
-filterhits,
-
-findwindow
+genomesplit,  createindex,  maptogenome,  filterhits,  findwindow
 
 **Module 1: Split genome into candidate gRNA sequences**
 
