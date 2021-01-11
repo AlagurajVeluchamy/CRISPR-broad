@@ -41,15 +41,15 @@ EpiCRISPR-targetfinder minimally only requires a genome file in fasta format, PA
 
 **QUICK RUN**
 
-python epicrisprtarget.py genomesplit -d /Users/avelucha/Epicrisprtest/EpiCRISPR-TargetFinder -f Inputgenome.fa -g 50 -p GG -t 1 -l 23
+python epicrisprtarget.py genomesplit -d /Users/EpiCRISPR-TargetFinder -f Inputgenome.fa -g 50 -p GG -t 1 -l 23
 
 python epicrisprtarget.py createindex -f Inputgenome.fa
 
-python epicrisprtarget.py maptogenome -d /Users/avelucha/Epicrisprtest/EpiCRISPR-TargetFinder -f Inputgenome.fa -m 1 -n 3 -k 1 -g 50 -l 23 -t 1
+python epicrisprtarget.py maptogenome -d /Users/EpiCRISPR-TargetFinder -f Inputgenome.fa -m 1 -n 3 -k 1 -g 50 -l 23 -t 1
 
-python epicrisprtarget.py filterhits -d /Users/avelucha/Epicrisprtest/EpiCRISPR-TargetFinder -n 3 -t 1
+python epicrisprtarget.py filterhits -d /Users/EpiCRISPR-TargetFinder -n 3 -t 1
 
-python epicrisprtarget.py findwindow -d /Users/avelucha/Epicrisprtest/EpiCRISPR-TargetFinder -f Inputgenome.fa -p GG -t 1 -l 23 -w 1000 -n 3
+python epicrisprtarget.py findwindow -d /Users/EpiCRISPR-TargetFinder -f Inputgenome.fa -p GG -t 1 -l 23 -w 1000 -n 3
 
 
 **Usage: To list all modules**
