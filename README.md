@@ -29,7 +29,7 @@ pip install pandas;
 
 **Installing EpiCRISPR-TargetFinder:**
 
-git clone https://github.com/AlagurajVeluchamy/EpiCRISPR-TargetFinder.git
+git clone https://github.com/AlagurajVeluchamy/EpiCRISPR-TargetFinder.git; cd EpiCRISPR-TargetFinder
 
 **Description:**
 
@@ -39,17 +39,17 @@ EpiCRISPR-targetfinder is a standalone tool that  enables user to scan genome fo
 
 EpiCRISPR-targetfinder minimally only requires a genome file in fasta format, PAM sequences in string format "NGG".
 
-**QUICK RUN**
+**QUICK RUN:**
 
-python epicrisprtarget.py genomesplit -d /Users/EpiCRISPR-TargetFinder -f Inputgenome.fa -g 50 -p GG -t 1 -l 23
+python epicrisprtarget.py genomesplit -d /Users/EpiCRISPR -f Inputgenome.fa -g 50 -p GG -t 1 -l 23
 
 python epicrisprtarget.py createindex -f Inputgenome.fa
 
-python epicrisprtarget.py maptogenome -d /Users/EpiCRISPR-TargetFinder -f Inputgenome.fa -m 1 -n 3 -k 1 -g 50 -l 23 -t 1
+python epicrisprtarget.py maptogenome -d /Users/EpiCRISPR -f Inputgenome.fa -m 1 -n 3 -k 1 -g 50 -l 23 -t 1
 
-python epicrisprtarget.py filterhits -d /Users/EpiCRISPR-TargetFinder -n 3 -t 1
+python epicrisprtarget.py filterhits -d /Users/EpiCRISPR -n 3 -t 1
 
-python epicrisprtarget.py findwindow -d /Users/EpiCRISPR-TargetFinder -f Inputgenome.fa -p GG -t 1 -l 23 -w 1000 -n 3
+python epicrisprtarget.py findwindow -d /Users/EpiCRISPR -f Inputgenome.fa -p GG -t 1 -l 23 -w 1000 -n 3
 
 
 **Usage: To list all modules**
@@ -60,15 +60,20 @@ usage: python epicrisprtarget.py [-h]
 
 python epicrisprtarget.py genomesplit -h
 
-    usage: epicrisprtarget.py genomesplit -d GENOMESPLITFASTA
-                                          -p PAMSEQUENCE
-                                          -o OUTPUTDIR
-                                          -m MISMATCH
-                                          -t THREADS
-                                          -s GETSEQUENCES
-                                          -n MINHITS
-                                          -w WINDOW
-                                          -l CANDIDATERNALENGTH
+    usage: epicrisprtarget.py genomesplit -h, --help            show this help message and exit
+                                          -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
+                                                                Genome sequence in FASTA format
+                                          -c CHR, --chromosome CHR
+                                                                chromosome name
+                                          -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
+                                                                Complete path of output directory
+                                          -p PAMSEQUENCE, --pam_sequence PAMSEQUENCE
+                                                                PAM sequence string eg: GG for NGG PAM
+                                          -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
+                                                                Candidate gRNA length
+                                          -g GC, --get_gc GC    gc content in integer
+                                          -t THREADS, --num_threads THREADS
+                                                                Launch t number of threads in parallel
 
 **Module 2: Create index**
 
