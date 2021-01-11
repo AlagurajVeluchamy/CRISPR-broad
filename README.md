@@ -19,25 +19,28 @@ biopython 1.78,
 pandas 1.2.0
 
 **Installing bwa:**
-git clone https://github.com/lh3/bwa.git
+git clone https://github.com/lh3/bwa.git; 
 cd bwa; make
 
 **Installing dependancies through pip:**
-pip install biopython
-pip install pandas
+pip install biopython;
+pip install pandas;
 
 
-**Installation:**
-EpiCRISPR-TargetFinder depends on python3, bwa.
+**Installing EpiCRISPR-TargetFinder:**
+
 git clone https://github.com/AlagurajVeluchamy/EpiCRISPR-TargetFinder.git
 
 **Description:**
+
 EpiCRISPR-targetfinder is a standalone tool that  enables user to scan genome for regions that has high frequency of gRNA with user-supplied variation. This open source tool is robust and efficient in finding gRNAs with scores and ranks potential target region. 
 
 **Input:**
+
 EpiCRISPR-targetfinder minimally only requires a genome file in fasta format, PAM sequences in string format "NGG".
 
 **QUICK RUN**
+
 python epicrisprtarget.py genomesplit -d /Users/avelucha/Epicrisprtest/EpiCRISPR-TargetFinder -f Inputgenome.fa -g 50 -p GG -t 1 -l 23
 
 python epicrisprtarget.py createindex -f Inputgenome.fa
@@ -49,8 +52,8 @@ python epicrisprtarget.py filterhits -d /Users/avelucha/Epicrisprtest/EpiCRISPR-
 python epicrisprtarget.py findwindow -d /Users/avelucha/Epicrisprtest/EpiCRISPR-TargetFinder -f Inputgenome.fa -p GG -t 1 -l 23 -w 1000 -n 3
 
 
-
 **Usage: To list all modules**
+
 usage: python epicrisprtarget.py [-h] 
 
 **Module 1: Split genome into candidate gRNA sequences**
