@@ -1,5 +1,5 @@
-# EpiCRISPR-TargetFinder
-**EpiCRISPR-TargetFinder**
+# CRISPR-broad
+**CRISPR-broad**
 
 Version: 1.1.0
 
@@ -29,7 +29,7 @@ pip install pandas;
 
 **Installing EpiCRISPR-TargetFinder:**
 
-git clone https://github.com/AlagurajVeluchamy/EpiCRISPR-TargetFinder.git; cd EpiCRISPR-TargetFinder
+git clone https://github.com/AlagurajVeluchamy/CRISPR-broad.git; cd EpiCRISPR-TargetFinder
 
 **Description:**
 
@@ -37,36 +37,36 @@ git clone https://github.com/AlagurajVeluchamy/EpiCRISPR-TargetFinder.git; cd Ep
 
 ** OUTPUT description **
 
-EpiCRISPR-targetfinder is a standalone tool that  enables user to scan genome for regions that has high frequency of gRNA with user-supplied variation. This open source tool is robust and efficient in finding gRNAs with scores and ranks potential target region. 
+CRISPR-broad is a standalone tool that  enables user to scan genome for regions that has high frequency of gRNA with user-supplied variation. This open source tool is robust and efficient in finding gRNAs with scores and ranks potential target region. 
 
 **Input:**
 
-EpiCRISPR-targetfinder minimally only requires a genome file in fasta format, PAM sequences in string format "NGG".
+CRISPR-broad minimally only requires a genome file in fasta format, PAM sequences in string format "NGG".
 
 **QUICK RUN:**
 
-python epicrisprtarget.py genomesplit -d /Users/EpiCRISPR -f Inputgenome.fa -g 50 -p GG -t 1 -l 23
+python crisprbroad.py genomesplit -d /Users/CRISPR -f Inputgenome.fa -g 50 -p GG -t 1 -l 23
 
-python epicrisprtarget.py createindex -f Inputgenome.fa
+python crisprbroad.py createindex -f Inputgenome.fa
 
-python epicrisprtarget.py maptogenome -d /Users/EpiCRISPR -f Inputgenome.fa -m 1 -n 3 -k 1 -g 50 -l 23 -t 1
+python crisprbroad.py maptogenome -d /Users/CRISPR -f Inputgenome.fa -m 1 -n 3 -k 1 -g 50 -l 23 -t 1
 
-python epicrisprtarget.py filterhits -d /Users/EpiCRISPR -n 3 -t 1
+python crisprbroad.py filterhits -d /Users/CRISPR -n 3 -t 1
 
-python epicrisprtarget.py findwindow -d /Users/EpiCRISPR -f Inputgenome.fa -p GG -t 1 -l 23 -w 1000 -n 3
+python crisprbroad.py findwindow -d /Users/CRISPR -f Inputgenome.fa -p GG -t 1 -l 23 -w 1000 -n 3
 
 
 **Usage: To list all modules**
 
-usage: python epicrisprtarget.py [-h] 
+usage: python crisprbroad.py [-h] 
 
-genomesplit,  createindex,  maptogenome,  filterhits,  findwindow
+genomesplit,  createindex,  maptogenome,  filterhits,  findwindow, findmultiwindow, multisgrna
 
 **Module 1: Split genome into candidate gRNA sequences**
 
-python epicrisprtarget.py genomesplit -h
+python crisprbroad.py genomesplit -h
 
-    usage: epicrisprtarget.py genomesplit [-h] 
+    usage: crisprbroad.py genomesplit [-h] 
                                           -h, --help            show this help message and exit
                                           -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
                                                                 Genome sequence in FASTA format
@@ -82,18 +82,18 @@ python epicrisprtarget.py genomesplit -h
 
 **Module 2: Create index**
 
-python epicrisprtarget.py createindex -h
+python crisprbroad.py createindex -h
 
-    usage: python epicrisprtarget.py createindex [-h] 
+    usage: python crisprbroad.py createindex [-h] 
                                                  -h, --help            show this help message and exit
                                                  -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
                                                                 Genome sequence in FASTA format
 
 **Module 3: Map gRNA to genome**
 
-python epicrisprtarget.py maptogenome -h
+python crisprbroad.py maptogenome -h
     
-    usage: epicrisprtarget.py maptogenome [-h]
+    usage: crisprbroad.py maptogenome [-h]
                                           -h, --help            show this help message and exit
                                           -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
                                                                 Genome sequence in FASTA format
@@ -113,9 +113,9 @@ python epicrisprtarget.py maptogenome -h
                                        
 **Module 4:Filter hits for on-target and off-target**
 
-python epicrisprtarget.py filterhits -h
+python crisprbroad.py filterhits -h
 
-    usage: epicrisprtarget.py filterhits [-h]
+    usage: crisprbroad.py filterhits [-h]
                                           -h, --help            show this help message and exit
                                           -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
                                                                 Complete path of output directory
@@ -126,9 +126,9 @@ python epicrisprtarget.py filterhits -h
 
 **Module 5: Scoring windows and ranking gRNA**
 
-python epicrisprtarget.py findwindow -h
+python crisprbroad.py findwindow -h
 
-    usage: epicrisprtarget.py findwindow [-h] 
+    usage: crisprbroad.py findwindow [-h] 
                                           -h, --help            show this help message and exit
                                           -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
                                                                 Genome sequence in FASTA format
@@ -147,9 +147,9 @@ python epicrisprtarget.py findwindow -h
 
 **Module 6: gRNA that targets multiple windows**
 
-python epicrisprtarget.py findmultiwindow -h
+python crisprbroad.py findmultiwindow -h
 
-    usage: epicrisprtarget.py findmultiwindow [-h] 
+    usage: crisprbroad.py findmultiwindow [-h] 
                                           -h, --help            show this help message and exit
                                           -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
                                                                 Genome sequence in FASTA format
@@ -172,9 +172,9 @@ python epicrisprtarget.py findmultiwindow -h
 
 **Module 7: Finding more than one gRNA that targets multiple windows**
 
-python epicrisprtarget.py multisgrna -h
+python crisprbroad.py multisgrna -h
 
-    usage: epicrisprtarget.py multisgrna [-h] 
+    usage: crisprbroad.py multisgrna [-h] 
                                           -h, --help            show this help message and exit
                                           
                                           -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
