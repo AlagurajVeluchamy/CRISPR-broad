@@ -182,7 +182,7 @@ python crisprbroad.py multisgrna -h
   
 
 
-**RESULTS:
+**RESULTS:**
 
 **OUTPUT description **
 
