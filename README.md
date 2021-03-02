@@ -177,6 +177,26 @@ Results ranked list of gRNA and windows with score and dispersion are in tab-lim
 
 | Column       |    Column Name        | Description |
 | ------------- |:-------------:|------------- |
-| col 3 is      | right-aligned |       |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+|1| Queryname      | Assigned Id for sgRNA (forward/reverse strand; sgRNA number; Start position) | 
+|2| Query Sequence     | sgRNA sequence     | 
+|3| GC% |  GC content in % |
+|4| Finalscore     | Score assigned (0-2) for sgRNA (Higher the score better is the candidate |
+|5| Dispersion/Spread     | Standard deviation from the center of the hits      | 
+|6| suminwindscore | Sum of scores of sgRNA hits in target window      |
+|7| sumoutwindscore      | Sum of scores of sgRNA hits in off-target region |
+|8| Number of hits in Best window      | centered      |
+|9| Number of hits outside Best window |Number of sgRNA hits in  target window  | 
+|10| Best window      | Best target window based on score, standard deviation and number of off-target |       |
+|11| Hits within Best window      | Higher number of hits => Better sgRNA      |
+
+Column 11 Description
+
+["('I', '+', '12072082', '23M', '0')"]
+
+| CIGAR string       |    Desction        | 
+| ------------- |:-------------:|
+| I | chromosome name |
+| +       |    strand        | 
+| 12072082 | start |
+| 23M | 23 nucleotide match i,e alignment of sgRNA (23nt length) |
+| 0 | Edit distance (Unused) |
