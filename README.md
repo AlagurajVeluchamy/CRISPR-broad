@@ -173,7 +173,7 @@ python epicrisprtarget.py findwindow -h
 **RESULTS:
 Results ranked list of gRNA and windows with score and dispersion are in tab-limited file: CRISPR_broad_results.xls**
 
-	Query Sequence	GC%	Finalscore	Dispersion/Spread	suminwindscore	sumoutwindscore	Number of hits in Best window	Number of hits outside Best window	Best window	Hits within Best window
+
 
 | Column       |    Column Name        | Description |
 | ------------- |:-------------:|------------- |
@@ -189,9 +189,11 @@ Results ranked list of gRNA and windows with score and dispersion are in tab-lim
 |10| Best window      | Best target window based on score, standard deviation and number of off-target |       |
 |11| Hits within Best window      | Higher number of hits => Better sgRNA      |
 
-Column 11 Description
 
-["('I', '+', '12072082', '23M', '0')"]
+**Column 11 Description
+
+Example format: ["('I', '+', '12072082', '23M', '0')"]
+The above is repeated (equal to the number of sgRNA hits)
 
 | CIGAR string       |    Desction        | 
 | ------------- |:-------------:|
