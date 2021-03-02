@@ -190,7 +190,7 @@ Results ranked list of gRNA and windows with score and dispersion are in tab-lim
 |11| Hits within Best window      | Higher number of hits => Better sgRNA      |
 
 
-**Column 11 Description
+**Column 11 Description:**
 
 Example format: ["('I', '+', '12072082', '23M', '0')"]
 The above is repeated (equal to the number of sgRNA hits)
