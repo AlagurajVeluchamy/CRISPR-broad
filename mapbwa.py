@@ -49,5 +49,7 @@ def filtersam(argu, splitinputfile):
         datasplit2 = datachunk["col15"].str.split("X1:i:", n=1, expand=True)
         datachunk["counthitopt"] = datasplit1[1].apply(pd.to_numeric)
         datachunk["counthitsubopt"] = datasplit2[1].apply(pd.to_numeric)
-        datafiltered = datachunk.loc[(datachunk['counthitopt'] + datachunk['counthitsubopt'] + 1)  >= argu.minhits]
+        print (argu.minhits)
+        #datafiltered = datachunk.loc[(datachunk['counthitopt'] + datachunk['counthitsubopt'] + 1)  >= int(argu.minhits)]
+        datafiltered = datachunk[(((datachunk['counthitopt'] + datachunk['counthitsubopt'] + 1) >= int(argu.minhits)) & ((datachunk['counthitopt'] + datachunk['counthitsubopt'] + 1) <= int(argu.maxhits)))]
         datafiltered.to_csv(splitinputfile + "_filtered.txt", sep="\t", index=False, header=False, mode='a')
