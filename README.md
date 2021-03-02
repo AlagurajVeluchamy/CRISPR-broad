@@ -33,6 +33,10 @@ git clone https://github.com/AlagurajVeluchamy/EpiCRISPR-TargetFinder.git; cd Ep
 
 **Description:**
 
+
+
+** OUTPUT description **
+
 EpiCRISPR-targetfinder is a standalone tool that  enables user to scan genome for regions that has high frequency of gRNA with user-supplied variation. This open source tool is robust and efficient in finding gRNAs with scores and ranks potential target region. 
 
 **Input:**
@@ -167,4 +171,10 @@ python epicrisprtarget.py findwindow -h
                                                                 Candidate gRNA length
 
 **RESULTS:
-Results ranked list of gRNA and windows with score and dispersion are in tab-limited file: EpiCRISPR_results.xls**
+Results ranked list of gRNA and windows with score and dispersion are in tab-limited file: CRISPR_broad_results.xls**
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
