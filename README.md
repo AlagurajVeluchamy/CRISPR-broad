@@ -147,7 +147,7 @@ python epicrisprtarget.py findwindow -h
 
 **Module 6: gRNA that targets multiple windows**
 
-python epicrisprtarget.py findwindow -h
+python epicrisprtarget.py findmultiwindow -h
 
     usage: epicrisprtarget.py findmultiwindow [-h] 
                                           -h, --help            show this help message and exit
@@ -169,6 +169,22 @@ python epicrisprtarget.py findwindow -h
                                                                 number of target windows
                                           -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
                                                                 Candidate gRNA length
+
+**Module 7: Finding more than one gRNA that targets multiple windows**
+
+python epicrisprtarget.py multisgrna -h
+
+    usage: epicrisprtarget.py multisgrna [-h] 
+                                          -h, --help            show this help message and exit
+                                          
+                                          -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
+                                                                Complete path of output directory
+                                          -cb CRISPRBROADRESULTFILE, --crisprbroadresultfilt CRISPRBROADRESULTFILE
+                                                                File obtained as result from module5
+                                          -mg SGRNANUMBERS, --numberofgRNA NUMBEROFSGRNA
+                                                                Number of sgRNA in target window
+  
+
 
 **RESULTS:
 Results ranked list of gRNA and windows with score and dispersion are in tab-limited file: CRISPR_broad_results.xls**
