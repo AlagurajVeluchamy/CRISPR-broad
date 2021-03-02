@@ -141,6 +141,30 @@ python epicrisprtarget.py findwindow -h
                                           -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
                                                                 Candidate gRNA length
 
+**Module 6: gRNA that targets multiple windows**
+
+python epicrisprtarget.py findwindow -h
+
+    usage: epicrisprtarget.py findmultiwindow [-h] 
+                                          -h, --help            show this help message and exit
+                                          -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
+                                                                Genome sequence in FASTA format
+                                          -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
+                                                                Complete path of output directory
+                                          -p PAMSEQUENCE, --pam_sequence PAMSEQUENCE
+                                                                PAM sequence string eg: NGG
+                                          -t THREADS, --num_threads THREADS
+                                                                Launch t number of threads in parallel
+                                          -n MINHITS, --get_minhits MINHITS
+                                                                Minimum number of hits in a window (filter)
+                                          -ws WINDOW, --get_window WINDOW
+                                                                Window size in bp
+                                          -sl SLIDINGWINDOWSIZE, --get_slidingwindowlength SLIDINGWINDOWSIZE
+                                                                sliding window in bp (For consecutive windows: same as window size)
+                                          -nw NUMBEROFWINDOW, --get_multiwindow WINDOW
+                                                                number of target windows
+                                          -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
+                                                                Candidate gRNA length
 
 **RESULTS:
 Results ranked list of gRNA and windows with score and dispersion are in tab-limited file: EpiCRISPR_results.xls**
