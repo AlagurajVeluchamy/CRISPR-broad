@@ -17,6 +17,7 @@ bwa-0.7.11,
 Python 3.9.1, 
 biopython 1.78,
 pandas 1.2.0
+pyranges-0.0.95
 
 **Installing bwa:**
 git clone https://github.com/lh3/bwa.git; 
@@ -25,6 +26,7 @@ cd bwa; make
 **Installing dependancies through pip:**
 pip install biopython;
 pip install pandas;
+pip install pyranges
 
 
 **Installing EpiCRISPR-TargetFinder:**
@@ -41,15 +43,15 @@ CRISPR-broad minimally only requires a genome file in fasta format, PAM sequence
 
 **QUICK RUN:**
 
-python crisprbroad.py genomesplit -d /Users/CRISPR -f Inputgenome.fa -g 50 -p GG -t 1 -l 23
+1. python crisprbroad.py genomesplit -d /Users/CRISPR -f Inputgenome.fa -g 50 -p GG -t 6 -l 23
 
-python crisprbroad.py createindex -f Inputgenome.fa
+2. python crisprbroad.py createindex -f Inputgenome.fa
 
-python crisprbroad.py maptogenome -d /Users/CRISPR -f Inputgenome.fa -m 1 -n 3 -k 1 -g 50 -l 23 -t 1
+3. python crisprbroad.py maptogenome -d /Users/CRISPR -f Inputgenome.fa -t 6 -nm 150 -nx 200 -l 23 -m 2  -k 10000 -g 50
 
-python crisprbroad.py filterhits -d /Users/CRISPR -n 3 -t 1
+4. python crisprbroad.py filterhits -d /Users/CRISPR filterhits -d /Users/CRISPR -t 6 -nm 150 -nx 200
 
-python crisprbroad.py findwindow -d /Users/CRISPR -f Inputgenome.fa -p GG -t 1 -l 23 -w 1000 -n 3
+5. python crisprbroad.py findmultiwindow -d /Users/CRISPR  -t 6 -nm 150 -nx 200 -ws 100000 -sl 1000 -nw 3
 
 
 **Usage: To list all modules**
@@ -66,6 +68,8 @@ python crisprbroad.py genomesplit -h
                                           -h, --help            show this help message and exit
                                           -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
                                                                 Genome sequence in FASTA format
+                                          -q INPUTBED           --query_bedfile query in bed format
+                                                                optional input for finding sgRNA in a given region
                                           -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
                                                                 Complete path of output directory
                                           -p PAMSEQUENCE, --pam_sequence PAMSEQUENCE
@@ -99,9 +103,9 @@ python crisprbroad.py maptogenome -h
                                                                 Maximum number of mismatches for Bowtie2 alignment
                                           -t THREADS, --num_threads THREADS
                                                                 Launch t number of threads in parallel
-                                          -n MINHITS, --get_minhits MINHITS
+                                          -nm MINHITS, --get_minhits MINHITS
                                                                 Minimum number of hits in a window (filter)
-                                          -k MAXHITS, --get_maxmum_total_hits MAXHITS
+                                          -nx MAXHITS, --get_maxmum_total_hits MAXHITS
                                                                 Maximum total number of hits
                                           -g GC, --get_gc GC    gc content in integer
                                           -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
@@ -117,8 +121,9 @@ python crisprbroad.py filterhits -h
                                                                 Complete path of output directory
                                           -t THREADS, --num_threads THREADS
                                                                 Launch t number of threads in parallel
-                                          -n MINHITS, --get_minhits MINHITS
+                                          -nm MINHITS, --get_minhits MINHITS
                                                                 Minimum number of hits in a window (filter)
+                                          -nx MAXHITS, --get_maxmum_total_hits MAXHITS
 
 **Module 5: Scoring windows and ranking gRNA**
 
@@ -155,14 +160,18 @@ python crisprbroad.py findmultiwindow -h
                                                                 PAM sequence string eg: NGG
                                           -t THREADS, --num_threads THREADS
                                                                 Launch t number of threads in parallel
-                                          -n MINHITS, --get_minhits MINHITS
+                                          -nm MINHITS, --get_minhits MINHITS
                                                                 Minimum number of hits in a window (filter)
+                                          -nx MAXHITS, --get_maxmum_total_hits MAXHITS
+                                                                Maximum total number of hits
                                           -ws WINDOW, --get_window WINDOW
                                                                 Window size in bp
                                           -sl SLIDINGWINDOWSIZE, --get_slidingwindowlength SLIDINGWINDOWSIZE
                                                                 sliding window in bp (For consecutive windows: same as window size)
                                           -nw NUMBEROFWINDOW, --get_multiwindow WINDOW
                                                                 number of target windows
+                                          -q INPUTBED           --query_bedfile query in bed format
+                                                                optional input for finding sgRNA in a given region
                                           -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
                                                                 Candidate gRNA length
 
