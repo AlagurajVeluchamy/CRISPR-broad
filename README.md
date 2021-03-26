@@ -201,20 +201,22 @@ Results ranked list of gRNA and windows with score and dispersion are in tab-lim
 
 | Column       |    Column Name        | Description |
 | ------------- |:-------------:|------------- |
-|1| Queryname      | Assigned Id for sgRNA (forward/reverse strand; sgRNA number; Start position) | 
-|2| Query Sequence     | sgRNA sequence     | 
-|3| GC% |  GC content in % |
-|4| Finalscore     | Score assigned (0-2) for sgRNA (Higher the score better is the candidate |
-|5| Dispersion/Spread     | Standard deviation from the center of the hits      | 
-|6| suminwindscore | Sum of scores of sgRNA hits in target window      |
-|7| sumoutwindscore      | Sum of scores of sgRNA hits in off-target region |
-|8| Number of hits in Best window      | centered      |
-|9| Number of hits outside Best window |Number of sgRNA hits in  target window  | 
-|10| Best window      | Best target window based on score, standard deviation and number of off-target |       |
-|11| Hits within Best window      | Higher number of hits => Better sgRNA      |
+|1| Chromosome      | Chromosome name of best window for gRNA selection | 
+|2| Start     | Start position of best window for gRNA selection | 
+|3| End     | End position of best window for gRNA selection | 
+|4| crnaid     | Assigned Id for sgRNA (forward/reverse strand; sgRNA number; Start position) | 
+|5| Sequence     | sgRNA sequence of user defined length    | 
+|6| stringforgroup |  Chr-st-end pattern |
+|7| Hits within Best window      | Higher number of hits => Better sgRNA      |
+|8| score     | Score assigned (0-2) for sgRNA (Higher the score better is the candidate |
+|9| stdev     | Dispersion/spread from the center of the hits      |
+|10| Finalscore     | Sum of score of all hits sgRNA (Higher the score better is the candidate |
+|11| Total hits |Number of sgRNA hits in  whole genome including off-targets  | 
+|12| offtargethits     | Number of sgRNA hits in  outside Best target window based on score |       |
 
 
-**Column 11 Description:**
+
+**CIGAR Description:**
 
 Example format: ["('I', '+', '12072082', '23M', '0')"]
 The above is repeated (equal to the number of sgRNA hits)
