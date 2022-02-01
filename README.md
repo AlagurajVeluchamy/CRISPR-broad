@@ -42,8 +42,8 @@ CRISPR-broad is a standalone tool that  enables user to scan genome for regions 
 CRISPR-broad minimally only requires a genome file in fasta format, PAM sequences in string format "NGG".
 
 **QUICK RUN:**
-If you are planning to split genome into 40 parts in slurm based cluster: srun --time=4:00:00 --mem=100G --nodes=1 -c 40  --pty bash -l 
 
+If you are planning to split genome into 40 parts in slurm based cluster: srun --time=4:00:00 --mem=100G --nodes=1 -c 40  --pty bash -l 
 
 1. python crisprbroad.py genomesplit -d /Users/CRISPR -f Inputgenome.fa -g 50 -p GG -t 6 -l 23
 
