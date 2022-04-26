@@ -3,7 +3,7 @@
 
 Version: 1.1.0
 
-Date: 20-05-2020
+Date: 20-04-2022
 
 Authors: Alaguraj Veluchamy alaguraj.v@gmail.com, Wolfgang Fischle
 
@@ -133,20 +133,22 @@ python crisprbroad.py findwindow -h
 
     usage: crisprbroad.py findwindow [-h] 
                                           -h, --help            show this help message and exit
-                                          -f GENOMESPLITFASTA, --genome_fasta GENOMESPLITFASTA
-                                                                Genome sequence in FASTA format
+                                          -as AVOIDSCOREOFF, --avoid_scoreoff AVOIDSCOREOFF
+                                                                Avoid score calculation for off-targets (0 or 1)
                                           -d WORKINGDIRECTORY, --working_directory WORKINGDIRECTORY
                                                                 Complete path of output directory
                                           -p PAMSEQUENCE, --pam_sequence PAMSEQUENCE
                                                                 PAM sequence string eg: NGG
                                           -t THREADS, --num_threads THREADS
                                                                 Launch t number of threads in parallel
-                                          -n MINHITS, --get_minhits MINHITS
+                                          -nm MINHITS, --get_minhits MINHITS
                                                                 Minimum number of hits in a window (filter)
                                           -w WINDOW, --get_window WINDOW
                                                                 Window size in bp
                                           -l CANDIDATERNALENGTH, --get_candidaternalength CANDIDATERNALENGTH
                                                                 Candidate gRNA length
+                                          -nw WINDOWNUMBERS, --number of window WINDOWNUMBERS
+                                                               number of windows for targeting
 
 **Module 6: gRNA that targets multiple windows**
 
