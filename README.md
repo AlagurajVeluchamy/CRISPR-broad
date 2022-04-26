@@ -45,15 +45,15 @@ CRISPR-broad minimally only requires a genome file in fasta format, PAM sequence
 
 If you are planning to split genome into 40 parts in slurm based cluster: srun --time=4:00:00 --mem=100G --nodes=1 -c 40  --pty bash -l 
 
-1. python crisprbroad.py genomesplit -d /Users/CRISPR -f Inputgenome.fa -g 50 -p GG -t 6 -l 23
+1. python crisprbroad.py genomesplit -d /Users/CRISPR -f Inputgenome.fa -t 40 -l 23  -g 50 -p GG
 
 2. python crisprbroad.py createindex -f Inputgenome.fa
 
-3. python crisprbroad.py maptogenome -d /Users/CRISPR -f Inputgenome.fa -t 6 -nm 150 -nx 200 -l 23 -m 2  -k 10000 -g 50
+3. python crisprbroad.py maptogenome -d /Users/CRISPR -f Inputgenome.fa -t 40 -nm 5 -nx 10000 -m 2 -g 50 -l 230
 
-4. python crisprbroad.py filterhits -d /Users/CRISPR filterhits -d /Users/CRISPR -t 6 -nm 150 -nx 200
+4. python crisprbroad.py filterhits -d /Users/CRISPR  -t 40 -nm 5 -nx 10000
 
-5. python crisprbroad.py findmultiwindow -d /Users/CRISPR  -t 6 -nm 150 -nx 200 -ws 100000 -sl 1000 -nw 3
+6. python crisprbroad.py findwindow -d /Users/CRISPR  -t 40  -p GG -w 10000 -l 23 -nm 5 -nw 5
 
 
 **Usage: To list all modules**
