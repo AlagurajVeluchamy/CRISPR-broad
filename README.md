@@ -10,7 +10,7 @@ Authors: Alaguraj Veluchamy alaguraj.v@gmail.com, Wolfgang Fischle
 
 The package is developed for the design of gRNA for the targeted epigenome modifications on a broader region.
 
-License: GPL-2
+License: GPL-3
 
 **Depends:**
 bwa-0.7.11, 
