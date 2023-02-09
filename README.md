@@ -29,9 +29,9 @@ pip install pandas;
 pip install pyranges
 
 
-**Installing EpiCRISPR-TargetFinder:**
+**Installing CRISPR-broad:**
 
-git clone https://github.com/AlagurajVeluchamy/CRISPR-broad.git; cd EpiCRISPR-TargetFinder
+git clone https://github.com/AlagurajVeluchamy/CRISPR-broad.git; cd CRISPR-broad
 
 **Description:**
 
