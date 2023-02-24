@@ -1,4 +1,3 @@
-
 def readdirectories(subparsers):
     """ Read bed/bam files from a directory. """
     """ Options saved in argu. """
