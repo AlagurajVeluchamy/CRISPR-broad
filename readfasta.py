@@ -7,7 +7,7 @@ import math
 import pyranges as pr
 
 def readgenomefastafile(argu, inputfastafile):
-    """ Read genome file in fasta format and split into multiple files. """
+    """ Read genome file in fasta format and then split it into multiple files. """
     print ("Genome file:", inputfastafile)
     print ("Chosen PAM sequence :", argu.pamsequence)
     fileoutcandidates = os.path.join(argu.workingdirectory, "Candidate_crisprna.txt")
