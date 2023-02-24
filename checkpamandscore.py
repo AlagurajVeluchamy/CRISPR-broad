@@ -17,7 +17,6 @@ from datetime import datetime
 csv.field_size_limit(sys.maxsize)
 
 
-
 # def checkpam(argu, chr,start,secondaryhitpattern,strand, getgenome, querysequence, secondaryhitmismatch):
 #     length = score = ggfound = 0
 #     forwardseq = revcomplementseq = complementseq = "NONE"
