@@ -17,7 +17,7 @@ bwa-0.7.11,
 Python 3.9.1, 
 biopython 1.78,
 pandas 1.2.0
-pyranges-0.0.95
+pyranges 0.0.95
 
 **Installing bwa:**
 git clone https://github.com/lh3/bwa.git; 
