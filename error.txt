@@ -1,0 +1,1268 @@
+Process Process-5:
+Process Process-3:
+Process Process-4:
+Process Process-2:
+Process Process-6:
+Process Process-7:
+Process Process-8:
+Process Process-1:
+Process Process-10:
+Process Process-9:
+Process Process-11:
+Process Process-12:
+Process Process-13:
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Process Process-14:
+Process Process-17:
+Process Process-15:
+Process Process-16:
+Process Process-18:
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Process Process-20:
+Process Process-21:
+Process Process-19:
+Process Process-24:
+Process Process-23:
+Process Process-22:
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Process Process-25:
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Process Process-27:
+Process Process-26:
+Process Process-28:
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Process Process-32:
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Process Process-29:
+Process Process-31:
+Process Process-33:
+Process Process-30:
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Process Process-34:
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Process Process-38:
+Process Process-35:
+Process Process-39:
+Process Process-36:
+Process Process-37:
+Process Process-40:
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/share/apps/spack/new_spack/latest/linux-centos8-skylake_avx512/gcc-10.4.0/python-3.11.5-ujorrimhnmwra22aul3vzfugcuzd5i4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 468, in overlapeachchromosomesingle
+    datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['Chromosome', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Candidate_crisprnatabbed.txt2col'
+Traceback (most recent call last):
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/crisprbroad.py", line 82, in <module>
+    getallresults(argu)
+  File "/scratch/zafer.kosar/broad/test123/CRISPR-broad/checkpamandscore.py", line 109, in getallresults
+    dataresult = pd.read_csv("Crispr_broad_multihits.xls", names=['Chromosome', 'End', 'Start', 'Totalhits', 'finalscore', 'offtargetshits', 'score', 'Sequence', 'stdev', 'stringforgroup', 'taggingcount'], sep="\t", header=None)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/scratch/zafer.kosar/broad/test123/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Crispr_broad_multihits.xls'

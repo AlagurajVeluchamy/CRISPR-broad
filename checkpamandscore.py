@@ -105,7 +105,7 @@ def calculatestdev(bestwindow):
     return getstddev
 
 def getallresults(argu):
-    dataresult = pd.read_csv("Crispr_broad_multihits.xls", names=['Chromosome', 'End', 'Start', 'Totalhits', 'finalscore', 'offtargetshits', 'score', 'Sequence', 'stdev', 'stringforgroup', 'taggingcount'], sep="\t", header=None)
+    dataresult = pd.read_csv(os.path.join(argu.workingdirectory,"Crispr_broad_multihits.xls"), names=['Chromosome', 'End', 'Start', 'Totalhits', 'finalscore', 'offtargetshits', 'score', 'Sequence', 'stdev', 'stringforgroup', 'taggingcount'], sep="\t", header=None)
 ##Chromosome	End	Start	Totalhits	finalscore	offtargetshits	score	sequence	stdev	stringforgroup	taggingcount
     print ("Pooling the results...")
     column_names = ['Chromosome', 'Start', 'End', 'Totalhits', 'finalscore', 'offtargetshits', 'score', 'Sequence', 'stdev', 'stringforgroup', 'taggingcount']
@@ -116,7 +116,7 @@ def getallresults(argu):
 
 
 def checkpandapamquerywindow (rowdatchunk, argu, splitinputfile):
-    genomesplitoriginal = "Candidate_crisprnatabbed.txt"
+    genomesplitoriginal = os.path.join(argu.workingdirectory,"Candidate_crisprnatabbed.txt")
     datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['name', 'Str', 'Chromosome', 'crnanumber', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
     eachrowdataframe = pd.DataFrame(rowdatchunk['colCIGAR'], columns=['flips'])
     eachrowdataframe['flips'] = eachrowdataframe['flips'].str.replace('XA:Z:', '', regex=False)
@@ -203,7 +203,7 @@ def checkpandapamquerywindow (rowdatchunk, argu, splitinputfile):
         getscorewindow3.to_csv(fileoutstd, sep="\t", index=False, header=False)
 
 def checkpandapam(rowdatchunk, argu, splitinputfile):
-    genomesplitoriginal = "Candidate_crisprnatabbed.txt"
+    genomesplitoriginal = os.path.join(argu.workingdirectory,"Candidate_crisprnatabbed.txt")
     datachunkallcrna = pd.read_csv(genomesplitoriginal, header=None, names=['name', 'Str', 'Chromosome', 'crnanumber', 'Startggposition'], sep="\t", dtype=str, engine='c', index_col=False, low_memory=False, na_filter=True)
     eachrowdataframe = pd.DataFrame(rowdatchunk['colCIGAR'], columns=['flips'])
     eachrowdataframe['flips'] = eachrowdataframe['flips'].str.replace('XA:Z:', '', regex=False)
@@ -459,7 +459,7 @@ def checkpandapamsingle(eachrowdataframe, argu, datachunkallcrna1):
 
 def overlapeachchromosomesingle(argu, splitinputfile):
     print ("Processing:",splitinputfile)
-    genomesplitoriginal = "Candidate_crisprnatabbed.txt2col"
+    genomesplitoriginal = os.path.join(argu.workingdirectory,"Candidate_crisprnatabbed.txt2col")
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
     print(current_time)
