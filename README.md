@@ -1,4 +1,6 @@
 # CRISPR-broad
+** This software package is published Alaguraj Veluchamy *, Kaian Teles and Wolfgang Fischle. CRISPR-broad: combined design of multitargeting gRNAs and broad, multiplex target finding (Sci Rep. 2023 Nov 12;13(1):19717.). **
+** https://pubmed.ncbi.nlm.nih.gov/37953351/ **
 **CRISPR-broad**
 
 Version: 1.1.0
