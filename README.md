@@ -12,7 +12,7 @@ Version: 1.1.0
 
 Date: 20-12-2022
 
-Authors: Alaguraj Veluchamy alaguraj.v@gmail.com, Wolfgang Fischle
+Authors: Alaguraj Veluchamy alaguraj.v@gmail.com
 
 
 The package is developed for the design of gRNA for the targeted epigenome modifications on a broader region.
